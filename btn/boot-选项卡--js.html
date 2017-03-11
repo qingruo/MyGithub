@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="bootstrap.min.css">
+		<script src="jquery-1.11.1.min.js"></script>
+		<script src="bootstrap.min.js"></script>
+		<title></title>
+	</head>
+	<body>
+		
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#p1" >第一页</a></li>
+				<li><a href="#p2" >第二页</a></li>
+				<li><a href="#p3" >第三页</a></li>
+				
+			</ul>
+			
+			<div class="tab-content">
+				<div id="p1" class="active tab-pane">
+					11111111111
+				</div>
+				<div id="p2" class="tab-pane">
+					
+					222222222222
+				</div>
+				<div id="p3" class="tab-pane">
+					3333333333333
+				</div>
+			</div>
+		</div>
+		
+		<div class="container">
+			<button class="btn btn-primary" data-toggle = "tooltip" data-placement='left'>向左显示</button>
+			
+		</div>
+		
+		
+	
+		<script type="text/javascript">
+			$(function(){
+				
+				$(".nav a").click(function(e){
+					e.preventDefault();
+					$(this).tab('show');
+					
+				});
+				
+			$("[data-toggle = 'tooltip']").tooltip();
+//			$("[data-toggle = 'tooltip']").click(function(){
+//				alert(1)
+//			})
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+			})
+			
+			
+			
+		</script>
+		
+	</body>
+</html>

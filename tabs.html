@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title></title>
+		<style type="text/css">
+			.tab-content{
+				border: 1px solid #ddd;
+				border-top: none;
+				padding: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#a" data-toggle="tab">one</a></li>
+				<li><a href="#b" data-toggle="tab">two</a></li>
+				<li><a href="#c" data-toggle="tab">three</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="a" class="tab-pane fade in active">aaaaaaaa</div>
+				<div id="b" class="tab-pane fade">bbbbbbb</div>
+				<div id="c" class="tab-pane fade">ccccccc</div>
+			</div>
+		</div>
+		<br />
+		<div class="container">
+			<ul id="myTabs" class="nav nav-tabs">
+				<li class="active"><a href="#a2" data-toggle="tab">one</a></li>
+				<li><a href="#b2" data-toggle="tab">two</a></li>
+				<li><a href="#c2" data-toggle="tab">three</a></li>
+			</ul>
+			<div class="tab-content">
+				<div id="a2" class="tab-pane active">aaaaaaaa</div>
+				<div id="b2" class="tab-pane">bbbbbbb</div>
+				<div id="c2" class="tab-pane">ccccccc</div>
+			</div>
+		</div>
+		<br />
+		<div class="container">
+			<ul class="nav nav-tabs">
+				<li class="active"><a href="#a3" data-toggle="tab">one</a></li>
+				<li><a href="#b3" data-toggle="tab">two</a></li>
+				<li class="dropdown">
+					<a href="" class="dropdown-toggle" data-toggle="dropdown">three<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a href="c3" data-toggle="tab">child1</a></li>
+						<li><a href="d3" data-toggle="tab">child2</a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="tab-content">
+				<div id="a3" class="tab-pane active">aaaaaaaa</div>
+				<div id="b3" class="tab-pane">bbbbbbb</div>
+				<div id="c3" class="tab-pane">ccccccc</div>
+				<div id="d3" class="tab-pane">ddddddd</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<script type="text/javascript">
+			$(function(){
+				$("#myTabs a").mouseover(function(){
+					$(this).tab('show');
+				});
+				
+				
+			});
+		</script>
+	</body>
+</html>

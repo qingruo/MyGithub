@@ -1,0 +1,17 @@
+<meta http-equiv="X-UA-Compatible" content="IE=dege"/>
+使用最新的IE渲染模式渲染网页
+
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+html5shiv：解决ie9以下浏览器对html5新增标签的不识别，并导致CSS不起作用的问题。
+respond.min:让不支持css3 Media Query的浏览器包括IE6-IE8等其他浏览器支持查询。
+
+判断是不是移动端
+if(window.navigator.userAgent.toLowerCase().indexOf('mobile') == -1)
+
+
+把标签和控件放在一个带有 class .form-group 的 <div> 中。这是获取最佳间距所必需的。
+向所有的文本元素 <input>、<textarea> 和 <select> 添加 class .form-control。

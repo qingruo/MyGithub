@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title></title>
+		<style type="text/css">
+			body{
+				padding-top: 10px;
+				font-family: "microsoft yahei";
+			}
+			div.container{
+				margin-bottom: 20px;
+			}
+		</style>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#ul1").find("li").mouseover(function(){
+					$(this).addClass("active").siblings().removeClass("active");
+				});
+				
+				
+				
+			});
+		</script>
+	</head>
+	<body>
+		<div class="container">
+		    <div class="row">
+		    	<div class="col-md-12">
+		    	  <ul class="nav nav-tabs" id="ul1">
+		    		<li class="active"><a href="">菜单一</a></li>
+		    		<li><a href="">菜单二</a></li>
+		    		<li><a href="">菜单三</a></li>
+		    		<li><a href="">菜单四</a></li>
+		    	  </ul>
+		    	</div>
+		    </div>
+		</div>
+		
+		<div class="container">
+		    <div class="row">
+		    	<div class="col-md-12">
+		    	  <ul class="nav nav-pills">
+		    		<li class="active"><a href="">菜单一</a></li>
+		    		<li><a href="">菜单二</a></li>
+		    		<li><a href="">菜单三</a></li>
+		    		<li><a href="">菜单四</a></li>
+		    	  </ul>
+		    	</div>
+		    </div>
+		</div>
+		
+		<div class="container">
+		    <div class="row">
+		    	<div class="col-md-4 col-lg-push-8">
+		    	  <ul class="nav nav-tabs nav-stacked">
+		    		<li class="active"><a href="">菜单一</a></li>
+		    		<li><a href="">菜单二</a></li>
+		    		<li><a href="">菜单三</a></li>
+		    		<li><a href="">菜单四</a></li>
+		    	  </ul>
+		    	</div>
+		    </div>
+		</div>
+		
+		<div class="container">
+		    <div class="row">
+		    	<div class="col-md-4">
+		    	  <ul class="nav nav-pills nav-stacked">
+		    		<li class="active"><a href="">菜单一</a></li>
+		    		<li><a href="">菜单二</a></li>
+		    		<li><a href="">菜单三</a></li>
+		    		<li><a href="">菜单四</a></li>
+		    	  </ul>
+		    	</div>
+		    </div>
+		</div>
+		
+		<div class="container">
+		    <div class="row">
+		    	
+		    	  <ul class="nav nav-tabs nav-tabs-justified">
+		    		<li class="active"><a href="" data-toggle = "tab">菜单一</a></li>
+		    		<li><a href="" data-toggle = "tab">菜单二</a></li>
+		    		<li><a href="" data-toggle = "tab">菜单三</a></li>
+		    		<li><a href="" data-toggle = "tab">菜单四</a></li>
+		    	  </ul>
+		    	
+		    </div>
+		</div>
+		
+		<div class="container">
+		  <div class="progress">
+			  <div class="progress-bar progress-bar-success progress-bar-striped" style="width: 35%">
+			    <span class="sr-only">35% Complete (success)</span>
+			  </div>
+			  <div class="progress-bar progress-bar-warning progress-bar-striped active" style="width: 20%">
+			    <span class="sr-only">20% Complete (warning)</span>
+			  </div>
+			  <div class="progress-bar progress-bar-danger progress-bar-striped" style="width: 10%">
+			    <span class="sr-only">10% Complete (danger)</span>
+			  </div>
+		  </div>
+		</div>
+		
+		
+		
+		
+	</body>
+</html>

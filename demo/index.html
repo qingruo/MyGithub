@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Bootstrap Demo</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=dege"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/animate.css"/>
+		<script src="js/jquery-1.11.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script><br />
+		<script src="js/jquery.singlePageNav.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/wow.min.js"></script>
+		
+		<!--[if lt IE 9]>
+	        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+	</head>
+	<body>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<!--向元素添加 role="navigation"，有助于增加可访问性。-->
+			<div class="container">
+				<div class="navbar-header">
+					<!--小屏幕按钮和logo-->
+					<button class="navbar-toggle" data-toggle="collapse"data-target=".navbar-collapse">
+						<span class="sr-only">切换导航</span>
+						<span class="icon-bar"></span><!--一个icon-bar代表小屏幕时一个线-->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand">金科院</a>
+				</div>
+				
+				<!--导航   要折叠的内容必须包裹在带有.navbar-collapse .collapse的 <div> 中。-->
+				<div class="navbar-collapse collapse" style="overflow: hidden;">
+					<ul class="nav navbar-nav navbar-right"style="overflow: hidden;">
+						<li><a href="#home">首页</a></li>
+						<li><a href="#forum">论坛</a></li>
+						<li><a href="#h5">前端开发</a></li>
+						<li><a href="#course">最新课程</a></li>
+						<li><a href="#app">移动课程</a></li>
+						<li><a href="#footer">联系我们</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!--
+        	主要部分开始
+        -->
+		<section id="home">
+			<!--滤镜层-->
+			<div class="opacity">
+				<div class="container">
+					<!--data-wow-duration="1s"动画执行时间-->
+					<div class="row wow fadeInUp" data-wow-duration="1s">
+						<div class="col-md-1 col-lg-1"></div>
+						<div class="col-md-10 col-lg-10">
+							<h1>BootStrap训练课</h1>
+							<p>导航栏是一个很好的功能，是 Bootstrap 网站的一个突出特点</p>
+							<p>Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式</p>
+							<div class="col-md-12 boots">
+								<span>B</span>
+								<p>Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
+								<a href="http://v3.bootcss.com/components/"target="_blank" class="btn btn-outline-inverse btn-lg">下载Bootstrap</a>
+							</div>
+						</div>
+						<div class="col-md-1 col-lg-1"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--论坛-->
+		<section id="forum">
+			<div class="container">
+				<div class="row wow flipInY" data-wow-offset="44">
+					<div class="col-md-4">
+						<a href="http://www.hcjjp.com.cn" target="_blank">
+							<img src="img/a.png" class="img-responsive"/>
+							<h3>安卓开发</h3>
+							<p>Android开发技术交流、问题求助、实战案例分享</p>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="http://www.hcjjp.com.cn" target="_blank">
+							<img src="img/i.png" class="img-responsive"/>
+							<h3>IOS开发</h3>
+							<p>iOS开发技术交流，海量iOS实战干货分享</p>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="http://www.hcjjp.com.cn" target="_blank">
+							<img src="img/b.png" class="img-responsive"/>
+							<h3>嵌入式底层开发</h3>
+							<p>底层嵌入式开发、实战案例等技术交流讨论</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--HTML5-->
+		
+		<section id="h5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft"data-wow-offset="44">
+						<h2>HTML5前端开发</h2>
+						<p>一线资深前端开发工程师倾情打造！助你完成普通程序员到优秀工程师的华丽升级！</p>
+						<p><span class="glyphicon glyphicon-leaf"></span> 使用HTML5与CSS3技术轻松实现设备自适应展示。</p>
+						<p><span class="glyphicon glyphicon-leaf"></span> 清晰明了的语义代码结构，更高的可读性、更利于页面维护的</p>
+					</div>
+					<div class="col-md-6 wow fadeInRight" data-wow-offset="44">
+						<img src="img/html5.jpg" class="img-responsive"/>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--bootstrap-->
+		
+		<section id="boot">
+			<div class="container">
+				<div class="row wow fadeInDown" data-wow-offset="24">
+					<div class="col-md-6">
+						<img src="img/Bootstrap.jpg" class="img-responsive"/>
+					</div>
+					<div class="col-md-6">
+						<h2>BootStrap实战视频教程</h2>
+						<p>Bootstrap 是最受欢迎的 HTML、CSS 和 JS 框架，用于开发响应式布局、移动设备优先的 WEB 项目。</p>
+						<p><span class="glyphicon glyphicon-leaf"></span> 你的网站和应用能在 Bootstrap 的帮助下通过同一份代码快速、有效适配手机、平板、PC 设备。</p>
+						<p><span class="glyphicon glyphicon-leaf"></span> Bootstrap 提供了全面、美观的文档。你能在这里找到关于 HTML 元素、HTML 和 CSS 组件、jQuery 插件方面的所有详细文档。</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!--课程-->
+		<section id="course">
+			<div class="container">
+				<div class="row wow fadeIn" data-wow-duration="2s">
+					<div class="col-md-12">
+						<h2>最新课程</h2>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<img src="img/swift.jpg" class="img-responsive"/>
+							<a href="http://www.hcjjp.com.cn">加入学习</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<img src="img/swift.jpg" class="img-responsive"/>
+							<a href="http://www.hcjjp.com.cn">加入学习</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<img src="img/swift.jpg" class="img-responsive"/>
+							<a href="http://www.hcjjp.com.cn">加入学习</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<img src="img/swift.jpg" class="img-responsive"/>
+							<a href="http://www.hcjjp.com.cn">加入学习</a>
+						</div>
+					</div>
+					
+					<div class="col-md-3">
+						<div>
+							<img src="img/swift.jpg" class="img-responsive"/>
+							<a href="http://www.hcjjp.com.cn">加入学习</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<img src="img/swift.jpg" class="img-responsive"/>
+							<a href="http://www.hcjjp.com.cn">加入学习</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<img src="img/swift.jpg" class="img-responsive"/>
+							<a href="http://www.hcjjp.com.cn">加入学习</a>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div>
+							<img src="img/swift.jpg" class="img-responsive"/>
+							<a href="http://www.hcjjp.com.cn">加入学习</a>
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+		</section>
+		<!--移动App-->
+		<section id="app">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInUp">
+						<h2>移动APP下载</h2>
+						<p>全新UI交互，与新网站数据同步，更加丰富的课程，开启精彩无限，语音搜索课程，喊出你想要的课程，一件收藏，方便自己重复学习，离线下载课程，在哪儿都能开！</p>
+						<a href="javascript:void(0)" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"></span> iPhone版下载</a>
+						<a href="javascript:void(0)" class="btn btn-primary"><span class="glyphicon glyphicon-download-alt"></span> Android版下载</a>
+					</div>
+					<div class="col-md-6 wow fadeInUp" data-wow-delay=".2s">
+						<a href="javascript:void(0)"><img src="img/app-banner.jpg" class="img-responsive"/></a>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer id="footer">
+			<div class="opacity">
+				<div class="container">
+				<div class="row">
+					<div class="col-md-6 wow fadeInLeft">
+						<h2><span class="glyphicon glyphicon-send"></span> &nbsp;&nbsp;联系我们</h2>
+						<p style="text-indent: 18px;">虽然可以直接使用 Bootstrap 提供的 CSS 样式表，不要忘记 Bootstrap 的源码是基于最流行的 CSS 预处理脚本 - Less 和 Sass 开发的。你可以采用预编译的 CSS 文件快速开发，也可以从源码定制自己需要的样式</p>
+						<p><span class="glyphicon glyphicon-home"></span> &nbsp;地址：南京市江宁区弘景大道99号金陵科技学院</p>
+						<p><span class="glyphicon glyphicon-phone-alt"></span> &nbsp;联系电话：132-1801-9631</p>
+						<p><span class="glyphicon glyphicon-envelope"></span> &nbsp;邮箱：673821975@qq.com</p>
+					</div>
+					<div class="col-md-6 wow fadeInRight">
+						<div class="navbar-form">
+							<form action="#" method="post">
+								<div class="col-md-6">
+									
+									<label for="username"></label>
+									<input type="text" id="userame" class="form-control" placeholder="您的姓名"/>
+									
+								</div>
+								<div class="col-md-6">
+									
+									<label for="email"></label>
+									<input type="email" id="email" class="form-control" required="required" placeholder="您的邮箱"/>
+									
+								</div>
+								<div class="col-md-12">
+									<input type="text" class="form-control" value="" placeholder="标题"/>
+								</div>
+								
+								<div class="col-md-12">
+									<textarea rows="4" class="form-control content" value="" placeholder="留言内容"></textarea>
+								</div>
+								<div class="col-md-8">
+									<input type="submit" value="提交" class="form-control btn btn-primary"/>
+									
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</footer>
+		
+		<section id="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<p class="text-center">地址:南京市江宁区弘景大道99号金陵科技学院; 电话: 13218019631 <br/>
+							邮箱：673821975@qq.com
+							华瑞集团 版权所有 Copyright &copy;2016 All rights reserved. ICP 备案号:苏ICP备16052238
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<script type="text/javascript">
+			$(function(){
+				$(".nav").singlePageNav({//导航跳转插件 缓冲
+					offset:70,
+				});
+				/*小屏幕下 导航点击菜单关闭*/
+				$(".navbar-collapse a").click(function(){
+					$(".navbar-collapse").collapse("hide");
+				});
+				new WOW().init();
+				
+				
+			});
+			
+			
+			
+		</script>
+	</body>
+</html>
